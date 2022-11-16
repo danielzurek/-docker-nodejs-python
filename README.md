@@ -20,6 +20,6 @@ That is a quick example how to dockerize python and nodejs application.
     docker build -t python:latest .
     
  ##### Run
-     docker run --name node-app -p 3000:3000 --rm node:latest
-     docker run --name python-app --rm python:latest
+     docker run --name node-app -p 3000:3000 -d --rm node:latest
+     docker run --name python-app -it --rm python:latest
 
